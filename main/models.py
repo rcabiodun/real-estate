@@ -60,6 +60,6 @@ class Property(models.Model):
             if cloudinary_response["secure_url"]:
                 my_path=os.path.join(settings.BASE_DIR,'media')
                 print(self.image)
-                full_path=os.path.join(my_path1,self.image.name)
+                full_path=os.path.join(my_path,self.image.name)
                 print(full_path)
                 os.remove(full_path)
